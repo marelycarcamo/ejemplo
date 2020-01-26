@@ -3,59 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Plantilla</title>
 
     <style>
-        /*
-        header{
-            background:url(imagen1.jpg) no-repeat center center fixed;
-            background-size:cover;
-	        height:100px;
-	        width: 100%;
-	        position: absolute;
-	        left:0;
-	        top:0;
-        }
-      */
- *{
+       
+      *{
         padding: 0px;
         margin: 0px;
       }  
 
+      header{
+        height: 120px;
+        border: 1px solid black;
+      }
+
+      /********************************************/
+      /*               MENU DERECHO               */
+      /********************************************/
+
+
+      #menu1{
+        margin-left:1150px ;
+        margin-top: 5px;
+        font: Verdana small;
+      }
+
+      #menu1 li{
+        float: left;
+        border-left: 1px solid darkblue;
+        padding-left: 4px;
+        list-style-type: none;
+      }     
+
+    #menu1 li:first-child {
+        border-left: none;
+      }       
+
+
+      
+        #menu1 a{
+      display: block; 
+      }
+      
+
+      /***************************************/
+      /*         MENU PRINCIPAL              */
+      /***************************************/
+
 
      nav{
        font-family:Verdana;
-    
-       width: 1000px ;
+       background-color:darkslategray;
      
-
      }
      
-     ul{
-       list-style: none;
+      nav li{
+        display:inline;
+     
+      }
+     
+     nav ul{
+      list-style-type: none;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    
+    
       }
     
-      .nav2 li a{
-        background-color: black;
-        color: white;
-        text-decoration: none;
-        padding: 10px 15px;
-        display: block;
-      }
+     nav a{
+      padding-right:40px;
+    
+      color: white;
       
-      .nav2 li a:hover{
-        background: #434343;
-      }
-      
-      .nav2 > li{
-        float: left;
-      } 
-      
-      
+     }
 
-    </style>
+      </style>
 </head>
 <body>
     <header>
@@ -64,8 +87,8 @@
         
         <div id="menu1" >
             <ul>
-                <li><a href="">Sobre Nosotros</a> |</p></li>
-                <li> <a href="">Blog</a> |</li>
+                <li><a href="">Sobre Nosotros</a></p></li>
+                <li> <a href="">Blog</a></li>
                 <li> <a href="">Contacto</a></li>
             </ul>
         </div>
@@ -79,17 +102,17 @@
 
     <nav>
         <ul>
-            <li><a href="">CATEGORIA 1</a></li>
-            <li><a href="">CATEGORIA 2</a></li>
-            <li><a href="">CATEGORIA 3</a> </li>
-            <li><a href="">CATEGORIA 4</a> </li>
+            <li><a href="">Categoría 1</a></li>
+            <li><a href="">Categoría 2</a></li>
+            <li><a href="">Categoría 3</a> </li>
+            <li><a href="">Categoría 4</a> </li>
         </ul>
     </nav>
 
 
    
 
-    <div>
+    <div style="text-align: center; margin: 40px;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/lDmviHIjUg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   
