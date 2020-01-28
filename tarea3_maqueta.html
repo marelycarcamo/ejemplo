@@ -6,7 +6,7 @@
 
     <title>Plantilla</title>
 
-    <style>
+    <style type="text/css">
        
       *{
         padding: 0px;
@@ -14,41 +14,41 @@
       }  
 
       header{
-        height: 120px;
-        border: 1px solid black;
+        height: 180px;
       }
 
       /********************************************/
-      /*               MENU DERECHO               */
+      /*               MENU DERECHO   CSS         */
       /********************************************/
 
 
       #menu1{
-        margin-left:1150px ;
-        margin-top: 5px;
+        text-align: right;
+        margin-top: 3px;
+        margin-right: 3px;
         font: Verdana small;
       }
 
       #menu1 li{
-        float: left;
+        display: inline-block;
         border-left: 1px solid darkblue;
         padding-left: 4px;
-        list-style-type: none;
       }     
 
-    #menu1 li:first-child {
+      #menu1 li:first-child {
         border-left: none;
       }       
 
+       
+     
 
-      
-        #menu1 a{
-      display: block; 
-      }
-      
+
+
+
+
 
       /***************************************/
-      /*         MENU PRINCIPAL              */
+      /*         MENU PRINCIPAL   CSS           */
       /***************************************/
 
 
@@ -78,18 +78,58 @@
       
      }
 
+
+
+     /********* VIDEO ***********/
+     #video{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+     /*************************************/
+     /*       CAJAS SECCION 3             */
+     /*************************************/
+
+      .imagenes_seccion3{
+        display: inline-block;
+        padding-left: 80px;
+        padding-right: 80px;
+        width: 200px;
+        height: 200px;
+      }
+
+      #caja2, #caja3{
+        margin-top: 30px;
+      }
+
+      table{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: auto;
+        width: 1200px;
+        overflow: auto;
+      }
+
       </style>
 </head>
+
+
+
+
+<!--
+  ********************* SECCION 1 HTML ************************
+-->
 <body>
     <header>
 
+    
   
         
         <div id="menu1" >
             <ul>
-                <li><a href="">Sobre Nosotros</a></p></li>
-                <li> <a href="">Blog</a></li>
-                <li> <a href="">Contacto</a></li>
+                <li><a href="#">Sobre Nosotros</a></p></li>
+                <li> <a href="#">Blog</a></li>
+                <li> <a href="#">Contacto</a></li>
             </ul>
         </div>
 
@@ -111,10 +151,58 @@
 
 
    
-
-    <div style="text-align: center; margin: 40px;">
+    <!-- EL VIDEO -->
+    <div id="video" >
         <iframe width="560" height="315" src="https://www.youtube.com/embed/lDmviHIjUg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   
+
+
+    <!--
+      **********************  SECCION 3  HTML  *****************************
+    -->
+<div id="seccion3" style="background-color: lightsteelblue;">
+
+    <!--****************  CAJA 1 - SECCION 3  **************-->
+
+    <div></div>
+
+
+
+    <!--***************  CAJA 2 - SECCION 3 ****************-->
+ 
+  <table id="caja2">
+    <tr>
+      <td>
+        <h1 style="text-decoration: underline;">Sabías que ...</h1>
+     </td>
+      <td> <h1 style="text-decoration: underline;">Contacto</h1></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <p>Avenida Providencia 1550</p>
+      <p>Santiago de Chile</p>
+      <p>Fono: +56 2 2731 8336</p>
+      </td>
+    </tr>
+
+  </table>
+
+
+    <!--***********   CAJA 3 - SECCION 3     ***************-->
+  <div style="text-align-last: center;" id="caja3">
+    <div class="imagenes_seccion3">
+      <img src="wta-2019-1.png" alt="" >
+    </div>
+    <div class="imagenes_seccion3">
+      <img src="wta-2019-2.png" alt="" >
+    </div>
+    <div class="imagenes_seccion3">
+      <img src="logo-2.png" alt="" >
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
