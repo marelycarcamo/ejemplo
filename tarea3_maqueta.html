@@ -6,7 +6,7 @@
 
     <title>Plantilla</title>
 
-    <style>
+    <style type="text/css">
        
       *{
         padding: 0px;
@@ -33,16 +33,14 @@
         display: inline-block;
         border-left: 1px solid darkblue;
         padding-left: 4px;
-        list-style-type: none;
       }     
 
-    #menu1 li:first-child {
+      #menu1 li:first-child {
         border-left: none;
       }       
 
        
-
-
+     
 
 
 
@@ -80,21 +78,37 @@
       
      }
 
+
+
+     /********* VIDEO ***********/
+     #video{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
      /*************************************/
      /*       CAJAS SECCION 3             */
      /*************************************/
 
-     .cajas_seccion3{
-       display: inline-block;
-     }
+      .imagenes_seccion3{
+        display: inline-block;
+        padding-left: 80px;
+        padding-right: 80px;
+        width: 200px;
+        height: 200px;
+      }
 
+      #caja2, #caja3{
+        margin-top: 30px;
+      }
 
-     #caja3 .cajas_seccion3{
-      padding-left: 10px;
-      padding-right: 10px;
-
-
-     }
+      table{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: auto;
+        width: 1200px;
+        overflow: auto;
+      }
 
       </style>
 </head>
@@ -108,13 +122,14 @@
 <body>
     <header>
 
+    
   
         
         <div id="menu1" >
             <ul>
-                <li><a href="">Sobre Nosotros</a></p></li>
-                <li> <a href="">Blog</a></li>
-                <li> <a href="">Contacto</a></li>
+                <li><a href="#">Sobre Nosotros</a></p></li>
+                <li> <a href="#">Blog</a></li>
+                <li> <a href="#">Contacto</a></li>
             </ul>
         </div>
 
@@ -136,8 +151,8 @@
 
 
    
-
-    <div style="text-align: center; margin: 40px;">
+    <!-- EL VIDEO -->
+    <div id="video" >
         <iframe width="560" height="315" src="https://www.youtube.com/embed/lDmviHIjUg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   
@@ -146,7 +161,7 @@
     <!--
       **********************  SECCION 3  HTML  *****************************
     -->
-
+<div id="seccion3" style="background-color: lightsteelblue;">
 
     <!--****************  CAJA 1 - SECCION 3  **************-->
 
@@ -155,30 +170,39 @@
 
 
     <!--***************  CAJA 2 - SECCION 3 ****************-->
-  <div id="caja2">
-    <div class="cajas_seccion3" >
-      <h1 style="text-decoration: underline;">Sabías que ...</h1>
-      <p></p>
-    </div>
-    <div class="cajas_seccion3">
-      <h1 style="text-decoration: underline;">Contacto</h1>
-    </div>
-  </div>
+ 
+  <table id="caja2">
+    <tr>
+      <td>
+        <h1 style="text-decoration: underline;">Sabías que ...</h1>
+     </td>
+      <td> <h1 style="text-decoration: underline;">Contacto</h1></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <p>Avenida Providencia 1550</p>
+      <p>Santiago de Chile</p>
+      <p>Fono: +56 2 2731 8336</p>
+      </td>
+    </tr>
+
+  </table>
 
 
     <!--***********   CAJA 3 - SECCION 3     ***************-->
   <div style="text-align-last: center;" id="caja3">
-    <div class="cajas_seccion3">
+    <div class="imagenes_seccion3">
       <img src="wta-2019-1.png" alt="" >
     </div>
-    <div class="cajas_seccion3">
+    <div class="imagenes_seccion3">
       <img src="wta-2019-2.png" alt="" >
     </div>
-    <div class="cajas_seccion3">
+    <div class="imagenes_seccion3">
       <img src="logo-2.png" alt="" >
     </div>
   </div>
-
+</div>
 
 </body>
 </html>
