@@ -14,23 +14,23 @@
       }  
 
       header{
-        height: 120px;
-        border: 1px solid black;
+        height: 180px;
       }
 
       /********************************************/
-      /*               MENU DERECHO               */
+      /*               MENU DERECHO   CSS         */
       /********************************************/
 
 
       #menu1{
-        margin-left:1150px ;
-        margin-top: 5px;
+        text-align: right;
+        margin-top: 3px;
+        margin-right: 3px;
         font: Verdana small;
       }
 
       #menu1 li{
-        float: left;
+        display: inline-block;
         border-left: 1px solid darkblue;
         padding-left: 4px;
         list-style-type: none;
@@ -40,15 +40,17 @@
         border-left: none;
       }       
 
+       
 
-      
-        #menu1 a{
-      display: block; 
-      }
-      
+
+
+
+
+
+
 
       /***************************************/
-      /*         MENU PRINCIPAL              */
+      /*         MENU PRINCIPAL   CSS           */
       /***************************************/
 
 
@@ -78,8 +80,31 @@
       
      }
 
+     /*************************************/
+     /*       CAJAS SECCION 3             */
+     /*************************************/
+
+     .cajas_seccion3{
+       display: inline-block;
+     }
+
+
+     #caja3 .cajas_seccion3{
+      padding-left: 10px;
+      padding-right: 10px;
+
+
+     }
+
       </style>
 </head>
+
+
+
+
+<!--
+  ********************* SECCION 1 HTML ************************
+-->
 <body>
     <header>
 
@@ -116,5 +141,44 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/lDmviHIjUg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   
+
+
+    <!--
+      **********************  SECCION 3  HTML  *****************************
+    -->
+
+
+    <!--****************  CAJA 1 - SECCION 3  **************-->
+
+    <div></div>
+
+
+
+    <!--***************  CAJA 2 - SECCION 3 ****************-->
+  <div id="caja2">
+    <div class="cajas_seccion3" >
+      <h1 style="text-decoration: underline;">Sabías que ...</h1>
+      <p></p>
+    </div>
+    <div class="cajas_seccion3">
+      <h1 style="text-decoration: underline;">Contacto</h1>
+    </div>
+  </div>
+
+
+    <!--***********   CAJA 3 - SECCION 3     ***************-->
+  <div style="text-align-last: center;" id="caja3">
+    <div class="cajas_seccion3">
+      <img src="wta-2019-1.png" alt="" >
+    </div>
+    <div class="cajas_seccion3">
+      <img src="wta-2019-2.png" alt="" >
+    </div>
+    <div class="cajas_seccion3">
+      <img src="logo-2.png" alt="" >
+    </div>
+  </div>
+
+
 </body>
 </html>
